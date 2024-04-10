@@ -340,7 +340,6 @@ class Bibliography(Directive):
             )
             source_dir = dirname(abspath(source))
             path = join(source_dir, path)
-        path = nodes.reprunicode(path)
         path = abspath(path)
         return path
 
